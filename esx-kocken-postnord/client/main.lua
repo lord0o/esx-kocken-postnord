@@ -324,7 +324,7 @@ function OnWay()
 
             local PlayerCoords = GetEntityCoords(PlayerPedId())
 
-            drawTxt(0.82, 0.504, 1.0,1.0,0.4, 'Tryck ~r~[G]~w~ för att avbryta din körning', 255, 255, 255, 255)
+            drawTxt(0.87, 0.504, 1.0,1.0,0.4, 'Tryck ~r~[G]~w~ för att avbryta din körning', 255, 255, 255, 255)
 
             if IsControlJustReleased(0, Keys['G']) then
                 canceled = true
@@ -338,11 +338,11 @@ function OnWay()
             end
 
             if not DropOff then
-                drawTxt(0.82, 0.604, 1.0,1.0,0.4, 'Åk och lämna paketet vid ' .. locations[random].name, 255, 255, 255, 255)
+                drawTxt(0.87, 0.604, 1.0,1.0,0.4, 'Åk och lämna paketet vid ' .. locations[random].name, 255, 255, 255, 255)
             end
 
             if not IsPedInVehicle(PlayerPedId(), deliverCar, true) and not DropOff then
-                drawTxt(0.82, 0.554, 1.0,1.0,0.4, 'Hoppa in i ~b~bilen', 255, 255, 255, 255)
+                drawTxt(0.87, 0.554, 1.0,1.0,0.4, 'Hoppa in i ~b~bilen', 255, 255, 255, 255)
             end
 
             if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), locations[random].x, locations[random].y, locations[random].z) < 45.0 then
@@ -351,7 +351,7 @@ function OnWay()
                 local x, y, z   = table.unpack(coords + forward * -2.7)
                 DropOff = true
 
-                drawTxt(0.82, 0.604, 1.0,1.0,0.4, 'Lämna av paketet', 255, 255, 255, 255)
+                drawTxt(0.87, 0.604, 1.0,1.0,0.4, 'Lämna av paketet', 255, 255, 255, 255)
 
                 show3dtext(locations[random].x, locations[random].y, locations[random].z, tostring("Lämna paketet ~r~här"))
 
