@@ -6,5 +6,7 @@ Folk ville ha de så då kastar jag ut de
 
 Har du några problem med scriptet? Tveka inte, kontakta mig på discord så fixar jag det. (kockenn #1337)
 
+[Cred]
+qalle#1337
 
 [LICENSE] Var snäll och inte reuploada detta eller ta CRED för något.
