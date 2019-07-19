@@ -9,7 +9,7 @@ AddEventHandler('esx-kocken-postnord:receiveMoney', function()
     local Player = ESX.GetPlayerFromId(_source)
     local moneytoget = math.random(20, 30)
     Player.addMoney(moneytoget)
-    TriggerClientEvent("esx:showNotification", _source, ('Du klarade av körningen och tog emot ~g~'..moneytoget..' SEK')
+    TriggerClientEvent("esx:showNotification", _source, ('Du klarade av körningen och tog emot ~g~'..moneytoget..' SEK'))
 end) 
 
 
